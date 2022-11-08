@@ -390,6 +390,11 @@ header {
 
 .iconmod {
      fill: #000000;
+     transition: fill var(--trans-fast);
+}
+.iconmod:hover,
+.iconmod:focus {
+    fill: var(--accent-color);
 }
 
 /* SECTION OUR ADVANTAGES */
@@ -696,6 +701,7 @@ footer {
 }
 .container.foot {
     display: flex;
+    justify-content: center;
     align-items: baseline;
 }
 
@@ -752,7 +758,7 @@ address {
 }
 .socialcont {
     display: block;
-    
+    margin-right: 93px;
     
 }
 .find-title {
@@ -792,6 +798,72 @@ address {
 .icon-infooter {
     fill: currentColor;
 }
+
+.field {
+    display: block;
+    width: 570px;
+    height: 86px;
+    
+   
+}
+.field-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--secondary-color);
+}
+
+.formfield {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.formfield input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25em;
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: #2F303A;   
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19em;
+    letter-spacing: 0.06em;
+    padding: 43px;
+    padding-top: 0; 
+    padding-bottom: 0;
+    padding-right: 0;
+    cursor: pointer;
+    border-color: transparent;  
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+.iconwing {
+    margin-left: 25px;
+}
+
 
 
 /* SECOND PAGE STYLES */
