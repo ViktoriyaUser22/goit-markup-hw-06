@@ -52,19 +52,36 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modalform">
             <div class="form-area">
-                <h2 class="form-title">Leave your information and we'll call you back</h2>
-                <label for="name" class="form-label">Name</label>
-                <input class="form-input" type="text" name="name" id="name"/>
-                <label for="tel" class="form-label">Telephone</label>
-                <input class="form-input" type="tel" name="tel" id="tel"/>
-                <label for="email" class="form-label">E-mil</label>
-                <input class="form-input" type="email" name="email" id="email"/>
-                <label for="comment" class="form-label">Comments</label>
-                <textarea class="comments" name="comment" id="comment" placeholder="Enter the text"></textarea>
+                <p class="form-title">Leave your information and we'll call you back</p>
+                <label class="form-label">Name
+                <input class="form-input" type="text" name="user-name" />
+                <svg class="iconplace" width="18" height="18">
+                  <use href="./images/icons.svg.svg#icon-person-black-18dp-1-1"></use>
+                </svg>
+                </label>
+                <label class="form-label">Telephone
+                <input class="form-input" type="tel" name="user-phone" />
+                <svg class="iconplace" width="18" height="18">
+                  <use href="./images/icons.svg.svg#icon-phone-black-18dp-1-1"></use>
+                </svg>
+                </label>
+                <label  class="form-label">E-mil
+                <input class="form-input" type="email" name="user-mail" />
+                <svg class="iconplace" width="18" height="18">
+                  <use href="./images/icons.svg.svg#icon-email-black-18dp-1-1"></use>
+                </svg>
+                </label>
+                <label  class="form-label">Comments
+                <textarea class="comments" name="comment" rows="5" placeholder="Enter the text"></textarea>
+                </label>
                <div class="check-area">
-                 <input type="checkbox" name="acception" id="acception"/>
-                 <label for="acception" class="acceptions">I agree with the newsletter
-                     and accept the Terms and Conditions</label>
+                 <input type="checkbox" name="agreement" id="agreement" />
+                <svg class="iconpcheck" width="16" height="15">
+                   <use href="./images/icons.svg.svg#icon-Vector-1-1"></use> 
+                </svg>
+                 <label for="agreement" class="acceptions">I agree with the newsletter
+                     and accept the <a class="acception" href=""><span>Terms and Conditions</span></a>
+                 </label>
                </div>
                <button type="submit" class="send">Send</button>
             </div>
@@ -397,7 +414,7 @@
         <div class="field">
            <p class="field-title">SUBSCRIBE TO THE NEWSLETTER</p>
           <div class="formfield">
-           <input type="email" name="email" placeholder="E-mail" />
+           <input type="email" name="user-mail" placeholder="E-mail" />
            <button type="submit" class="sub">Subscribe<svg class="iconwing" width="24" height="24">
             <use href="./images/icons.svg.svg#icon-icon-send-1"></use>
            </svg></button>

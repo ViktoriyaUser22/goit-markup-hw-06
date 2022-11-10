@@ -416,21 +416,31 @@ header {
     font-size: 12px;
     line-height: 1.17em;
     letter-spacing: 0.01em;
-    
+    cursor: pointer;
     color: var(--secondary-text-color);
 }
 .form-input {
+    position: relative;
+    
     width: 448px;
     height: 40px;
     margin-bottom: 10px;    
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
+.iconplace {
+    position: absolute;
+    display: block;
+    top: 11px;
+    left: 12px;
+}
+
 .comments {
     width: 448px;
     height: 120px;
     padding: 12px 16px;
     margin-bottom: 20px;
+    resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }    
@@ -443,22 +453,26 @@ header {
     color: rgba(117, 117, 117, 0.5);
 }
 .check-area {
+    
     display: flex;
     align-items: baseline;
     margin-left: 12px;
 }
 
+    
+
 .acceptions {
     width: 400.62px;
     margin-left: 8.38px;    
     font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71em;
-        
-    
-        letter-spacing: 0.03em;
-    
-        color: #757575;
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.acception {
+    color: var(--accent-color);
 }
 .send {
     display: block;
@@ -469,16 +483,17 @@ header {
     margin-bottom: 0;
 
     font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        text-align: center;
-        letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
     
-        color: #FFFFFF;
-border-color: transparent;
+    color: #FFFFFF;
+    border-color: transparent;
     background: #2196F3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 
